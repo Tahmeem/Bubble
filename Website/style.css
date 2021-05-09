@@ -1,0 +1,194 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+*{
+font-family: 'DM Sans', sans-serif;
+}
+
+#welcome{
+    font-weight: bolder;
+}
+
+
+#intro{
+font-family: 'Quicksand', sans-serif;
+        color: #9464ff;
+            font-weight: bold;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-size: 23px;
+
+
+
+
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      #welcome{
+          font-size: 33px
+      }
+
+      #intro{
+          font-size: 16px;
+
+      }
+
+}
+
+
+:root {
+  --gradient-percent: 0%;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+  text-align:center;
+}
+p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+.header {
+  position: relative;
+  text-align: center;
+background-color: #4a52ff;
+background-image: linear-gradient(62deg, #4a52ff 0%, #E0C3FC 100%);
+
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+#classroom{
+position: relative;
+bottom: 170px;
+
+background-color: #FBAB7E; background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+outline: none;
+height: 50px;
+border-radius: 20px;
+border: none;
+padding-left: 15px;
+padding-right: 15px;
+color: white;
+font-weight: bolder;
+
+margin-left:10px;
+margin-right: 10px;
+
+
+}
+
+#ideate{
+    font-weight: bolder;
+    color: #9464ff;
+    text-decoration: underline;
+
+}
+
+#ideate1{
+        font-weight: bolder;
+    color: #9464ff;
+
+}
+
+#navmain{
+         font-weight: bolder;
+    color: #9464ff;
+}
+
+.accordion{
+    color: black;
+    margin-top:70px;
+    font-size: 18px;
+font-family: 'Quicksand', sans-serif;
+font-weight: light;
+}
+
+.accordion-body{
+    font-family: 'Quicksand', sans-serif;
+font-weight: light;
+}
