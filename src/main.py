@@ -55,7 +55,7 @@ async def promo(ctx):
     embed = discord.Embed(title="Intact Insurance", url="https://www.intact.ca/on/en/personal-insurance.html",
                           description="To find out more about us and our insurance plans visit our website",
                           color=discord.Color.blue())
-
+    await ctx.send("Your message(s) has been sent!")
     for member in memberList:
         await member.send(embed=embed)
 
